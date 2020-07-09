@@ -1,2 +1,2 @@
 # prod047
-Conveyor scanner
+Conveyor scanner and display
