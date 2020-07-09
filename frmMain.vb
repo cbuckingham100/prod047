@@ -189,12 +189,12 @@ Public Class frmMain
     Private Sub LED_Display(ByVal counter As Integer)
 
         Dim bStr As String = CStr(xMDAQ.ToBinary(counter))
-        bStr = bStr.ToString().PadLeft(3, "0")
+        bStr = bStr.ToString().PadLeft(4, "0")
 
         If Mid(bStr, 1, 1) = "0" Then
-            txtRed.BackColor = Color.Silver
+            txtGreen.BackColor = Color.Silver
         Else
-            txtRed.BackColor = Color.Red
+            txtGreen.BackColor = Color.Lime
         End If
 
         If Mid(bStr, 2, 1) = "0" Then
@@ -204,9 +204,15 @@ Public Class frmMain
         End If
 
         If Mid(bStr, 3, 1) = "0" Then
-            txtGreen.BackColor = Color.Silver
+            txtRed.BackColor = Color.Silver
         Else
-            txtGreen.BackColor = Color.Lime
+            txtRed.BackColor = Color.Red
+        End If
+
+        If Mid(bStr, 4, 1) = "0" Then
+            txtCyan.BackColor = Color.Silver
+        Else
+            txtCyan.BackColor = Color.Cyan
         End If
 
 
@@ -406,6 +412,12 @@ Public Class frmMain
             WaitHere(10)
             exportDigital(7)
             WaitHere(10)
+            exportDigital(8)
+            WaitHere(10)
+
+            exportDigital(15)
+            WaitHere(10)
+
             exportDigital(0)
 
         End If
