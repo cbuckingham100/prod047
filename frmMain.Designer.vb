@@ -44,6 +44,7 @@ Partial Class frmMain
         Me.txtGreen = New System.Windows.Forms.TextBox()
         Me.lblMDAQ = New System.Windows.Forms.Label()
         Me.btnMDAQ_test = New System.Windows.Forms.Button()
+        Me.txtCyan = New System.Windows.Forms.TextBox()
         Me.pnlTest.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -188,6 +189,7 @@ Partial Class frmMain
         '
         'pnlTest
         '
+        Me.pnlTest.Controls.Add(Me.txtCyan)
         Me.pnlTest.Controls.Add(Me.txtRed)
         Me.pnlTest.Controls.Add(Me.txtOrange)
         Me.pnlTest.Controls.Add(Me.txtGreen)
@@ -203,7 +205,7 @@ Partial Class frmMain
         Me.txtRed.BackColor = System.Drawing.Color.Red
         Me.txtRed.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtRed.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtRed.Location = New System.Drawing.Point(145, 11)
+        Me.txtRed.Location = New System.Drawing.Point(158, 11)
         Me.txtRed.Name = "txtRed"
         Me.txtRed.Size = New System.Drawing.Size(10, 20)
         Me.txtRed.TabIndex = 86
@@ -213,7 +215,7 @@ Partial Class frmMain
         Me.txtOrange.BackColor = System.Drawing.Color.DarkOrange
         Me.txtOrange.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtOrange.ForeColor = System.Drawing.SystemColors.WindowText
-        Me.txtOrange.Location = New System.Drawing.Point(163, 11)
+        Me.txtOrange.Location = New System.Drawing.Point(170, 11)
         Me.txtOrange.Name = "txtOrange"
         Me.txtOrange.Size = New System.Drawing.Size(10, 20)
         Me.txtOrange.TabIndex = 85
@@ -246,6 +248,16 @@ Partial Class frmMain
         Me.btnMDAQ_test.TabIndex = 79
         Me.btnMDAQ_test.Text = "Test"
         Me.btnMDAQ_test.UseVisualStyleBackColor = True
+        '
+        'txtCyan
+        '
+        Me.txtCyan.BackColor = System.Drawing.Color.Cyan
+        Me.txtCyan.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtCyan.ForeColor = System.Drawing.SystemColors.WindowText
+        Me.txtCyan.Location = New System.Drawing.Point(146, 11)
+        Me.txtCyan.Name = "txtCyan"
+        Me.txtCyan.Size = New System.Drawing.Size(10, 20)
+        Me.txtCyan.TabIndex = 87
         '
         'frmMain
         '
@@ -298,4 +310,5 @@ Partial Class frmMain
     Friend WithEvents txtGreen As TextBox
     Friend WithEvents lblMDAQ As Label
     Friend WithEvents btnMDAQ_test As Button
+    Friend WithEvents txtCyan As TextBox
 End Class
