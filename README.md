@@ -1,2 +1,2 @@
-# prod044
-initialise printhead in production line
+# prod047
+Conveyor scanner
